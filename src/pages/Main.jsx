@@ -4,6 +4,7 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import Header from "./Header";
+import Test from "../components/Test";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -18,8 +19,10 @@ export default function RowAndColumnSpacing() {
     <Box margin={[6, 6, 6, 6]} sx={{ width: "95%" }}>
       <Grid container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid item xs={6}>
-          <Header title="Image1" subtitle="new image 1" />
-          <Item>1</Item>
+          <Header title="Test Image 1" subtitle="Test Image 1" />
+          <Item>
+            <Test />
+          </Item>
         </Grid>
         <Grid item xs={6}>
           <Header title="Image2" subtitle="new image 2" />
